@@ -1,0 +1,58 @@
+<% if(shop_data_array.length > 0){ %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> REGISTERED SHOP DATA</title>
+</head>
+<body style="background-color: black;">
+    
+   
+
+<!-- <div style="" > -->
+    <table style=" font-size: 150%; margin-top: 0%; padding:0.5%;  width: 100%; height: auto; 
+     background-color: rgb(87, 181, 218); border: solid 5px rgb(31, 91, 204);
+     box-shadow: 2px -1px 68px 10px rgba(31, 91, 204,0.77);
+    -webkit-box-shadow: 2px -1px 68px 10px rgba(31, 91, 204,0.77);
+    -moz-box-shadow: 2px -1px 68px 10px rgba(31, 91, 204,0.77);" border="1"  >
+    <h1 style="padding-top: 5%; color: darkviolet; text-align: center;" >REGISTERED SHOP DATA </h1>
+        <tr>
+     <th>id</th>
+     <th>shop_owner_name</th>
+     <th>phon_number</th>
+     <th>email</th>
+     <th>password</th>
+     <th>address</th>
+     <th colspan="2">action</th>
+
+   </tr>
+<% for( var i=0;i< shop_data_array.length;i++){%>
+
+<br><br>
+
+    <tr>
+        <td><%= shop_data_array[i].id %></td>
+        <td><%= shop_data_array[i].shop_owner_name %></td>
+        <td><%= shop_data_array[i].phon_number %></td>
+        <td><%= shop_data_array[i].email %></td>
+        <td><%= shop_data_array[i].password %></td>
+        <td><%= shop_data_array[i].address %></td>
+        <td> <a href="edit/<%= shop_data_array[i].id %>"><button style=" font-weight: 700; background-color: rgb(71, 59, 236);" >Edit</button></a></</td>
+       <td><a href="delete/<%= shop_data_array[i].id %>"> <button style=" font-weight: 700;background-color: red;" >Delete</button></a></td>
+
+    </tr>
+
+     
+
+<%}%>
+ </table>
+<!-- </div> -->
+<%}else{ %>
+
+RECORD NOT  FOUND
+
+<% }  %>
+</body>
+</html>

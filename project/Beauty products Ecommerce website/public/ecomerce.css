@@ -1,0 +1,356 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-link 
+{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar-brand
+{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    font-weight: 800;
+    /* background: -webkit-linear-gradient(rgb(156, 34, 34), rgb(32, 72, 206));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */ 
+}
+.carousel-caption 
+{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    /* transform: translateY(-7%); */
+    transform: translateX(-15%);
+    
+}
+.carousel-caption h1
+{
+    color: black;
+    font-size: 43px;
+    font-weight: 600;
+}
+.carousel-caption p
+{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-weight:600;
+}
+.btn0
+{
+background-color: red;
+color: white;
+height: 45px;
+width: 180px;
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 1px;
+margin-left: 22%;
+margin-top: 3%;
+outline: none;
+border: none;
+}
+.btn0:hover{
+    background-color: black;
+    color:red;
+    transition: 0.3s ;
+}
+/* ---------------- */
+.sub
+{
+    background-color: rgb(50, 6, 56);
+    color: white;
+}
+.sub input
+{
+    height: 50px;
+    width: 50%;
+    color: black;
+    outline: none;
+    /* border: none; */
+    padding: 10px;
+}
+
+.btn1
+{
+    height: 50px;
+    width: 50%;
+    font-weight: 600;
+    background-color:rgb(15, 204, 47); 
+    color: white;
+    border: none;
+    /* outline: none; */
+    margin-left: -2px;
+}
+.btn1:hover
+{
+    background-color: rgb(50, 6, 56);
+    color:rgb(15, 204, 47); 
+    transform:scale(1.05,1.05);
+    letter-spacing: 1px;
+    outline: solid rgb(255, 0, 0);
+    outline-offset: -7px ;
+    outline-style: groove;
+    transition: 0.2s;
+    margin-right: 2px;
+
+}
+.fas
+{
+    font-size: 31px;
+}
+.fas:hover
+{
+    transform:scale(1.08,1.08);
+}
+/* .sub .h51:hover span
+{
+    transform:scale(1.08,1.08);
+} */
+
+
+/* --------------------- */
+
+
+.collection span
+{
+    font-size: 19px;
+    color: yellowgreen;
+    font-weight: 800;
+    padding-left: 5px;
+
+}
+
+.collection small 
+{
+    margin-left: 5%;
+}
+.collection h5 
+{
+    margin-left: 5%;
+}
+.card
+{
+margin: 5% 5%;
+/* background: rgba(107, 11, 197, 0.596); */
+}
+.card input
+{
+   border: none;
+   border-radius: 5px;
+   position: absolute;
+   height: 45px;
+   width: 110px;
+   outline: none;
+   background-color: yellowgreen;
+   text-align: center;
+   color: white;
+   top: 40%;
+   left: 30%;
+   opacity: 0;
+}
+@media only screen and (max-width: 575px) 
+{
+    .card input
+    {
+   left: 40%;
+   justify-content: center;
+    }
+    
+}
+.collection .card:hover img
+{
+    opacity: 0.9;
+    transition: 0.6s;
+    /* transform:scale(1.08,1.08); */
+    transform: translateY(-15px);
+
+}
+.collection .card:hover
+{
+     transform:scale(1.08,1.08);
+    transition: 0.4s;
+    transform: translateY(-15px);
+
+
+}
+.collection .card:hover input
+{
+    opacity: 1;
+    transition: 1s;
+    
+}
+.collection  input:hover
+{
+    background-color: red;
+    /* color: black; */
+    /* border: outset;
+    outline: outset; */
+}
+/* ------------------------------ */
+.parallex
+{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url(img/bg11.jpg)no-repeat;
+    background-attachment: fixed;
+    /* opacity: 0.8; */
+    background-size:100% 100%;
+    width: 100%;
+}
+.parallex h1
+{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.parallex p
+{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+   /* Video
+ {
+
+     background-attachment: fixed;
+     min-width: 100%;
+     min-height: 100%;
+     right: 0%;
+     bottom: 0%;
+ } */
+ /* video {
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%)
+    background-size: cover;
+    transition: 1s opacity;
+} */
+.parallex .btn2
+{
+height: 40px;
+width: 130px;
+background:transparent;
+border: none ;
+color:  white;
+outline:none;
+
+font-weight: 600;
+border: 2.5px solid red;
+border-radius: 4px;
+}
+.parallex .btn2:hover
+{
+   background-color: white;outline: none;
+   color: red ;
+   border: none;
+   transition: 0.4s;
+}
+
+.parallex .btn3
+{
+    height: 40px;
+    width: 130px; 
+    /* background-color: red;outline: none; */
+    background-color: white;outline: none;
+
+    border: none;
+    /* color: white; */
+    color: red;
+
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.parallex .btn3:hover
+{
+     background-color: red;
+    outline: none;
+   color: white ;
+   border: none;
+   transition: 0.4s;
+}
+.article a
+{
+    list-style: none;
+    color: black;
+    outline: none;
+}
+.article a:hover
+{
+    color: yellowgreen;
+    transition: 0.3s;
+}
+.article p
+{
+    font-size: 21px;
+}
+.article
+{
+    background-color: rgb(234, 200, 238);
+    
+}
+.article small
+{
+    font-size: 16px;
+}
+.article span
+{
+color: yellowgreen;
+}
+.contect input
+{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    color: white;
+    background: transparent;
+    border: 2px solid red;
+    filter: blur(0.5);
+    box-shadow: 2px -1px 68px 10px rgba(186,14,14,0.77);
+    -webkit-box-shadow: 2px -1px 68px 10px rgba(186,14,14,0.77);
+    -moz-box-shadow: 2px -1px 68px 10px rgba(186,14,14,0.77);
+}
+.btn4
+{
+    height: 45px;
+    width: 160px;
+    display: inline-block;
+    color: white;
+    background: yellowgreen;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn4:hover
+{
+    background: red;
+    transition: 0.3s;
+}
+
+.contect
+{
+    background: black;
+}
+.contect p
+{
+    color: white;
+}
+.card
+{
+    background: linear-gradient(rgb(255, 230, 0),rgb(146, 68, 235));
+    box-shadow: 10px 18px 44px 8px rgba(0,0,0,0.53);
+-webkit-box-shadow: 10px 18px 44px 8px rgba(0,0,0,0.53);
+-moz-box-shadow: 10px 18px 44px 8px rgba(0,0,0,0.53);
+}

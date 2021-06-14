@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  background-color: black;
+}
+
+ form 
+{  
+  color: rgb(123, 14, 224);
+  font-size: 19px;
+  /* font-style: italic; */
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+border: 4px solid rgb(123, 14, 224);
+border-radius: 50px;
+/* text-align: center; */
+padding: 65px;
+margin: 3% 30%;
+text-align: start;
+background-color: black;
+box-shadow: 2px -1px 68px 10px rgba(123, 14, 224, 0.77);
+-webkit-box-shadow: 2px -1px 68px 10px rgba(123, 14, 224, 0.77);
+-moz-box-shadow: 2px -1px 68px 10px rgb(123, 14, 224, 0.77);
+
+}
+.container-fluid
+{
+  border: solid 5px white;
+}
+#submit
+{
+  font-size: 15px;
+  padding: 7px ;
+  color:white;
+  background-color: blue;
+  border-radius: 7px;
+  /* text-shadow: 2px 2px; */
+  box-shadow: 2px 2px grey;
+}
+ .input input 
+{
+  height: 15px;
+  width: 70%;
+  outline: none;
+  padding: 10px;
+  color: black;
+  font-size: 17px;
+  /* background: transparent; */
+  /* border: 2px solid red; */
+  filter: blur(0.5);
+}
